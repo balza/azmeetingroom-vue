@@ -1,7 +1,7 @@
 <template>
   <div id="sede">
     Sede :
-    <select>
+    <select v-model="selected">
       <option v-for='sede in sedi' v-bind:value="sede.id">{{ sede.descrizione }}</option>
     </select>
   </div>
@@ -9,6 +9,21 @@
 
 <script>
 export default {
+  props: {
+    value: String
+  },
+  computed: {
+    selected: {
+      get () {
+        console.log('selected.get ' + this.value)
+        return this.value
+      },
+      set (value) {
+        console.log('selected.set ' + value)
+        this.$emit('input', value)
+      }
+    }
+  },
   data () {
     return {
       sedi: [
@@ -22,12 +37,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

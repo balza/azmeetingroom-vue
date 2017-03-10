@@ -2,7 +2,8 @@
   <div id="calendar">
     Calendar
     <span>
-      <sede/>  
+      <sede v-model="selected"/>  
+      ****{{ selected }}****
       <piano idSede='oglio'/> 
     </span>
   </div>
