@@ -2,7 +2,7 @@
   <div id="sede">
     Sede :
     <select>
-      <option v-for='sede in sedi'>{{ sede.descrizione }}</option>
+      <option v-for='sede in sedi' v-bind:value="sede.id">{{ sede.descrizione }}</option>
     </select>
   </div>
 </template>
