@@ -10,7 +10,7 @@
 <script>
 export default {
   props: {
-    value: null
+    value: String
   },
   data () {
     return {
@@ -19,16 +19,6 @@ export default {
         { text: 'Secondo piano', idSede: 'oglio' },
         { text: 'Seminterrato', idSede: 'italia' }
       ]
-    }
-  },
-  computed: {
-    updateValue: {
-      get () {
-        console.log('idSede' + this)
-      },
-      set () {
-        console.log('idSede' + this)
-      }
     }
   },
   methods: {
