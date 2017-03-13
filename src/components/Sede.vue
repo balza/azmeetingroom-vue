@@ -1,7 +1,7 @@
 <template>
   <div id="sede">
     Sede :
-    <select v-model="selected">
+    <select v-model='selected'>
       <option v-for='sede in sedi' v-bind:value="sede.id">{{ sede.descrizione }}</option>
     </select>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    Piano {{ idSede }}: 
-    <select id='piano'>      
+    Piano : 
+    <select v-bind:value="value" v-on:input="filteredPiani($event.target.value)">      
       <option v-for="piano in filteredPiani(piani)">{{piano.text}}</option>
     </select>
   </div>
@@ -9,7 +9,9 @@
 
 <script>
 export default {
-  name: 'piano',
+  props: {
+    value: null
+  },
   data () {
     return {
       piani: [
@@ -19,10 +21,20 @@ export default {
       ]
     }
   },
-  props: ['idSede'],
+  computed: {
+    updateValue: {
+      get () {
+        console.log('idSede' + this)
+      },
+      set () {
+        console.log('idSede' + this)
+      }
+    }
+  },
   methods: {
     filteredPiani: function (piani) {
-      var id = this.idSede
+      console.log('filteredPiani ' + this.value)
+      var id = this.value
       return piani.filter(function (piano) {
         return piano.idSede.match(id)
       })

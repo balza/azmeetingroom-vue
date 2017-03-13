@@ -2,9 +2,8 @@
   <div id="calendar">
     Calendar
     <span>
-      <sede v-model="selected"/>  
-      ****{{ selected }}****
-      <piano idSede='oglio'/> 
+      <sede v-model="idSede"/>  
+      <piano v-bind:value='idSede'/> 
     </span>
   </div>
 </template>
@@ -15,6 +14,11 @@
   
   export default {
     name: 'calendar',
+    data () {
+      return {
+        idSede: null
+      }
+    },
     components: {
       sede: Sede,
       piano: Piano
