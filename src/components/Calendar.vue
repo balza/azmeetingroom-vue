@@ -5,6 +5,7 @@
       <sede v-model="idSede"/>  
       <piano v-bind:value='idSede'/> 
       <tipo v-bind:value='idSede'/>
+      <listaStanze v-bind:value='idSede'/>
     </span>
   </div>
 </template>
@@ -13,6 +14,7 @@
   import Sede from './Sede.vue'
   import Piano from './Piano.vue'
   import Tipo from './Tipo.vue'
+  import ListaStanze from './ListaStanze.vue'
   
   export default {
     name: 'calendar',
@@ -24,7 +26,8 @@
     components: {
       sede: Sede,
       piano: Piano,
-      tipo: Tipo
+      tipo: Tipo,
+      listaStanze: ListaStanze
     }
   }
 </script>
