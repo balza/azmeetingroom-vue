@@ -1,10 +1,10 @@
 <template>
-  <div id="sede">
+  <span id="sede">
     Sede :
     <select v-model='selected'>
       <option v-for='sede in sedi' v-bind:value="sede.id">{{ sede.descrizione }}</option>
     </select>
-  </div>
+  </span>
 </template>
 
 <script>

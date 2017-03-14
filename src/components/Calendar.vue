@@ -4,6 +4,7 @@
     <span>
       <sede v-model="idSede"/>  
       <piano v-bind:value='idSede'/> 
+      <tipo v-bind:value='idSede'/>
     </span>
   </div>
 </template>
@@ -11,6 +12,7 @@
 <script>
   import Sede from './Sede.vue'
   import Piano from './Piano.vue'
+  import Tipo from './Tipo.vue'
   
   export default {
     name: 'calendar',
@@ -21,7 +23,8 @@
     },
     components: {
       sede: Sede,
-      piano: Piano
+      piano: Piano,
+      tipo: Tipo
     }
   }
 </script>

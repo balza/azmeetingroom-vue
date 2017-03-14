@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <span>
     Piano : 
     <select v-bind:value="value" v-on:input="filteredPiani($event.target.value)">      
       <option v-for="piano in filteredPiani(piani)">{{piano.text}}</option>
     </select>
-  </div>
+  </span>
 </template>
 
 <script>
