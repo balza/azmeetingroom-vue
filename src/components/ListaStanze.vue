@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id='listaStanze'>
     <table style="width:100%">
       <thead>
         <tr>
