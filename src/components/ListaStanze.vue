@@ -41,11 +41,11 @@ export default {
   data () {
     return {
       sale: [
-        { text: 'Sala 109', id: '113', idSede: 'oglio', sede: 'Oglio', piano: 1, liberaMattina: true, liberaPomeriggio: true },
-        { text: 'Sala 118', id: '118', idSede: 'oglio', sede: 'Oglio', piano: 1, liberaMattina: false, liberaPomeriggio: true },
-        { text: 'Sala 122', id: '122', idSede: 'oglio', sede: 'Oglio', piano: 1, liberaMattina: true, liberaPomeriggio: false },
-        { text: 'Sale Frigessi', id: 'frigessi', idSede: 'italia', sede: 'Corso Italia', piano: 0, liberaMattina: true, liberaPomeriggio: false },
-        { text: 'Sala Rita Levi Montalcini', id: 'srlm', idSede: 'brenta', sede: 'Oglio', piano: 1, liberaMattina: false, liberaPomeriggio: false }
+        { id: 1, text: 'Sala 109', idSede: 'oglio', sede: 'Oglio', piano: 1, liberaMattina: true, liberaPomeriggio: true },
+        { id: 2, text: 'Sala 118', idSede: 'oglio', sede: 'Oglio', piano: 1, liberaMattina: false, liberaPomeriggio: true },
+        { id: 3, text: 'Sala 122', idSede: 'oglio', sede: 'Oglio', piano: 1, liberaMattina: true, liberaPomeriggio: false },
+        { id: 4, text: 'Sale Frigessi', idSede: 'italia', sede: 'Corso Italia', piano: 0, liberaMattina: true, liberaPomeriggio: false },
+        { id: 5, text: 'Sala Rita Levi Montalcini', idSede: 'brenta', sede: 'Oglio', piano: 1, liberaMattina: false, liberaPomeriggio: false }
       ]
     }
   },
